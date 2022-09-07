@@ -1,5 +1,7 @@
 baseURL = ""
 languageCode = "fr-FR"
+defaultContentLanguage = "fr"
+defaultContentLang = "fr"
 title = "Portfolio et blog de Mar-Nb"
 theme = "hugo-profile"
 Paginate = 3
@@ -53,6 +55,10 @@ url = "https://github.com/Mar-Nb"
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-linkedin"
 url = "https://www.linkedin.com/in/martin-stephen-niombela-182520237/"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fas fa-envelope"
+url = "mailto:niombela.martin@gmail.com"
 
 # [[params.hero.socialLinks.customIcons]]
 # icon = "/fav.png"
@@ -218,7 +224,7 @@ Formation courte de deux ans, ayant pour objectif de former des étudiants pour 
 
 		[[params.achievements.items]]
 		title = "Certification Windows Server 2016"
-		content = "70-740: Installation, Storage, and Compute with Windows Server 2016, score :"
+		content = "70-740: Installation, Storage, and Compute with Windows Server 2016"
 		url = "https://docs.microsoft.com/fr-fr/certifications/exams/70-740"
 
 
@@ -228,10 +234,10 @@ Formation courte de deux ans, ayant pour objectif de former des étudiants pour 
 		url = "https://docs.microsoft.com/fr-fr/certifications/exams/az-104"
 
 	[params.contact]
-	enable = true
-	content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-	email = "gurusabarisha@gmail.com"
-	btnName = "Mail me"
+	enable = false
+	content = "Vous pouvez me contacter via mon adresse mail (un clic sur le bouton et c'est fait !)"
+	email = "niombela.martin@gmail.com"
+	btnName = "Envoyer un mail"
 
 [params.footer.socialNetworks]
 github = "https://github.com/Mar-Nb"
