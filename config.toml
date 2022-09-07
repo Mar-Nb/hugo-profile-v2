@@ -1,0 +1,241 @@
+baseURL = ""
+languageCode = "fr-FR"
+title = "Portfolio et blog de Mar-Nb"
+theme = "hugo-profile"
+Paginate = 3
+# disqusShortname = "gurusabarish"
+# googleAnalytics = "G-DWJJVE27WD"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[Menus.main]]
+identifier = "blog"
+name = "Blog"
+title = "Posts de blog"
+url = "/blogs"
+weight = 1
+
+# [[Menus.main]]
+# identifier = "gallery"
+# name = "Gallery"
+# title = "Blog posts"
+# url = "/gallery"
+# weight = 2
+
+[params]
+title = "Mar-Nb"
+description = "Je suis @Mar-Nb, un développeur, et ceci est mon site web. Il fait portfolio, CV, et blog accessoirement."
+favicon = "/favicon.png"
+useBootstrapCDN = false
+
+	[params.theme]
+	disableThemeToggle = false
+
+	[params.hero]
+	enable = true
+	intro = "Salut 👋🏾️, mon nom c'est"
+	title = "Martin."
+	subtitle = "En bref, je suis développeur."
+	content = "Un développeur passionné, et polyvalent. J’utilise mes connaissances des technologies modernes pour rendre un produit le plus fonctionnel et ergonomique possible."
+	image = "/images/mar-nb.svg"
+
+		[params.hero.button]
+		enable = true
+		name = "Voir mon CV"
+		url = "#"
+		download = true
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/Mar-Nb"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/martin-stephen-niombela-182520237/"
+
+# [[params.hero.socialLinks.customIcons]]
+# icon = "/fav.png"
+# url = "https://example.com"
+
+	[params.about]
+	enable = true
+	title = "A propos moi"
+	image = "/images/bitmoji-lecteur.png"
+	content = """
+Je suis un développeur passionné par le développement, que cela soit pour le web, ou le mobile. J'ai un DUT, une licence professionnelle et un titre RNCP de niveau 7, tous dans le domaine du développement informatique.
+
+Il m'arrive aussi de développer sur mon temps libre, quand je ne suis pas en train de lire.
+
+Mon objectif du moment est de reprendre et d'améliorer quelque peu les différents projets que j'ai pu effectué durant ma scolarité (projet retrouvable sur [**mon compte Github**](https://github.com/Mar-Nb)).
+"""
+
+		[params.about.skills]
+		enable = true
+		title = "Quelques technologies avec lesquelles j'ai travaillé récemment :"
+		items = [ "HTML", "CSS", "JavaScript", "Angular", "Bulma", "PHP", "Typescript" ]
+
+	[params.experience]
+	enable = true
+	title = "Expériences professionnelles"
+
+    [[params.experience.items]]
+    job = "Développeur web stagiaire"
+    company = "Pims"
+    companyUrl = "https://pims.io"
+    date = "Avr 2019 - Juil 2019"
+    content = """
+Stage de fin de formation de DUT Informatique, portant sur l'implémentation de nouvelles fonctionnalités dans l'outil de pointage de l'entreprise, et la création d'un module d'analyse et de statistiques avec la bibliothèque Javascript  Highcharts.
+"""
+
+			# [params.experience.items.featuredLink]
+			# enable = true
+			# name = "View the project"
+			# url = "https://example.com"
+
+    [[params.experience.items]]
+    job = "Développeur-Formateur alternant"
+    company = "CMS Informatic"
+    companyUrl = "https://cms-informatic.com"
+    date = "Août 2019 - Oct 2022"
+    content = """
+Poste de développeur-formateur, consistant à accomplir des missions de développement, et à effectuer des formations sur la suite Office de Microsoft et sur certains langages de programmation."""
+
+			# [params.experience.items.featuredLink]
+			# enable = true
+			# url = "https://example.com"
+
+			[params.experience.items.info]
+			enable = false
+			content = "I worked as a software developer for more than one year in Amazon."
+
+
+	[params.education]
+	enable = true
+	title = "Formation"
+
+		[[params.education.items]]
+		title = "Architecte Technique en Informatique et Réseau, Spécialité Logiciel"
+		date = "2020 - 2022"
+		content = """
+Le parcours Logiciel, vise l’acquisition de compétences pointues dans le domaine du développement, des Big Data et de l’Intelligence artificielle étendues à un savoir-faire avancé en termes de conception objet, de modélisation et de définition d’architectures sophistiquées.
+"""
+
+			[params.education.items.school]
+			name = "CFA INSTA, 2ème arrondissement de Paris"
+			url = "https://cfa-insta.fr"
+
+		[[params.education.items]]
+		title = "Licence professionnelle SIGD-SISW"
+		date = "2019 - 2020"
+		content = """Licence portant principalement sur la gestion de bases de données et les services web, dans la continuité du contenu de la formation d'un DUT Informatique."""
+
+			[params.education.items.school]
+			name = "IUT de Vélizy-Villacoublay, Vélizy-Villacoublay"
+			url = "https://www.iut-velizy-rambouillet.uvsq.fr/"
+
+		[[params.education.items]]
+		title = "DUT Informatique"
+		date = "2017 - 2019"
+		content = """
+Formation courte de deux ans, ayant pour objectif de former des étudiants pour qu’ils puissent rapidement intégrer les services informatiques des entreprises ou des sociétés œuvrant dans la prestation de services informatiques.
+"""
+
+			[params.education.items.school]
+			name = "IUT de Vélizy-Villacoublay, Vélizy-Villacoublay"
+			url = "https://www.iut-velizy-rambouillet.uvsq.fr/"
+
+
+	[params.projects]
+	enable = true
+	title = "Mes projets"
+
+		[[params.projects.items]]
+		title = "Web Vote"
+		content = "Plateforme de vote, réalisé en PHP 7, avec des technologies comme Bootstrap, SQLite, et un peu d'AJAX."
+		image = "/images/projects/vote-cover.jpg"
+
+			[params.projects.items.featured]
+			name = "Démo"
+			link = "https://nb-dev.fr/web-vote-refonte/"
+
+			# [[params.projects.items.links]]
+			# icon = "fa fa-envelope"
+			# url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+			[[params.projects.items.links]]
+			icon = "fab fa-github"
+			url = "https://github.com/Mar-Nb/web-vote-refonte"
+
+			# [[params.projects.items.links]]
+			# icon = "fab fa-twitter"
+			# url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+		[[params.projects.items]]
+		title = "Simplix"
+		content = "Implémentation d'une interface graphique permettant la résolution de problème avec l'algorithme du Simplexe."
+		image = "/images/projects/simplexe.jpeg"
+
+			# [params.projects.items.featured]
+			# name = "Demo"
+			# link = "https://django-converter.herokuapp.com"
+
+			[[params.projects.items.links]]
+			icon = "fab fa-github"
+			url = "https://github.com/Mar-Nb/Simplix"
+
+		[[params.projects.items]]
+		title = "FoodRating"
+		content = "Site internet permettant à des utilisateurs de noter et de commenter des produits tirés d'une API open-source (Open Products Facts)."
+		image = "/images/projects/foodrating.jpg"
+
+			# [params.projects.items.featured]
+			# name = "Demo V2"
+			# link = "https://hugo-profile-2.netlify.app"
+
+			[[params.projects.items.links]]
+			icon = "fab fa-github"
+			url = "https://github.com/Mar-Nb/foodrating"
+
+	[params.achievements]
+	enable = true
+	title = "Certifications"
+
+		[[params.achievements.items]]
+		title = "Certification TOSA Excel"
+		content = "Obtention du certificat avec un score de 666 (août 2019)"
+		url = "https://www.tosa.org/FR/certification-microsoft-excel?sbj_id=57"
+
+		[[params.achievements.items]]
+		title = "Certification TOSA VBA Excel"
+		content = "Obtention du certificat avec un score de 799 (août 2019)"
+		url = "https://www.tosa.org/FR/certification-vba-excel?sbj_id=270"
+
+		[[params.achievements.items]]
+		title = "Certification TOSA Powerpoint"
+		content = "Obtention du certificat avec un score de 636 (septembre 2019)"
+		url = "https://www.tosa.org/FR/certification-microsoft-powerpoint?sbj_id=58"
+
+		[[params.achievements.items]]
+		title = "Certification Windows Server 2016"
+		content = "70-740: Installation, Storage, and Compute with Windows Server 2016, score :"
+		url = "https://docs.microsoft.com/fr-fr/certifications/exams/70-740"
+
+
+		[[params.achievements.items]]
+		title = "Certification Microsoft Azure"
+		content = "AZ-104: Microsoft Azure Administrator, score : 829 / 1000"
+		url = "https://docs.microsoft.com/fr-fr/certifications/exams/az-104"
+
+	[params.contact]
+	enable = true
+	content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+	email = "gurusabarisha@gmail.com"
+	btnName = "Mail me"
+
+[params.footer.socialNetworks]
+github = "https://github.com/Mar-Nb"
+linkedin = "https://www.linkedin.com/in/martin-stephen-niombela-182520237/"
+# twitter = "https://twitter.com"
+# instagram = "https://instagram.com"
+# facebook = "https://facebook.com"
