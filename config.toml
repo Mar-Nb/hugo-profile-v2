@@ -5,6 +5,7 @@ defaultContentLang = "fr"
 title = "Portfolio et blog de Mar-Nb"
 theme = "hugo-profile"
 Paginate = 3
+enableEmoji = true
 # disqusShortname = "gurusabarish"
 # googleAnalytics = "G-DWJJVE27WD"
 
@@ -45,7 +46,7 @@ useBootstrapCDN = false
 		[params.hero.button]
 		enable = true
 		name = "Voir mon CV"
-		url = "#"
+		url = "/cv_mar-nb.pdf"
 		download = true
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
@@ -73,7 +74,7 @@ Je suis un développeur passionné par le développement, que cela soit pour le 
 
 Il m'arrive aussi de développer sur mon temps libre, quand je ne suis pas en train de lire.
 
-Mon objectif du moment est de reprendre et d'améliorer quelque peu les différents projets que j'ai pu effectué durant ma scolarité (projet retrouvable sur [**mon compte Github**](https://github.com/Mar-Nb)).
+Un de mes objectifs du moment est de reprendre et d'améliorer quelque peu les différents projets que j'ai pu effectué durant ma scolarité (projet retrouvable sur [**mon compte Github**](https://github.com/Mar-Nb)).
 """
 
 		[params.about.skills]
@@ -158,7 +159,7 @@ Formation courte de deux ans, ayant pour objectif de former des étudiants pour 
 
 		[[params.projects.items]]
 		title = "Web Vote"
-		content = "Plateforme de vote, réalisé en PHP 7, avec des technologies comme Bootstrap, SQLite, et un peu d'AJAX."
+		content = "Plateforme de vote d'un établissement fictif, réalisé en PHP 7, avec des technologies comme Bootstrap, SQLite, et un peu d'AJAX."
 		image = "/images/projects/vote-cover.jpg"
 
 			[params.projects.items.featured]
@@ -179,7 +180,7 @@ Formation courte de deux ans, ayant pour objectif de former des étudiants pour 
 
 		[[params.projects.items]]
 		title = "Simplix"
-		content = "Implémentation d'une interface graphique permettant la résolution de problème avec l'algorithme du Simplexe."
+		content = "Implémentation d'une interface graphique en Java permettant la résolution de problème avec l'algorithme du Simplexe."
 		image = "/images/projects/simplexe.jpeg"
 
 			# [params.projects.items.featured]
@@ -192,7 +193,7 @@ Formation courte de deux ans, ayant pour objectif de former des étudiants pour 
 
 		[[params.projects.items]]
 		title = "FoodRating"
-		content = "Site internet permettant à des utilisateurs de noter et de commenter des produits tirés d'une API open-source (Open Products Facts)."
+		content = "Site internet basé sur le framework Symfony permettant à des utilisateurs de noter et de commenter des produits tirés d'une API open-source (Open Products Facts)."
 		image = "/images/projects/foodrating.jpg"
 
 			# [params.projects.items.featured]
