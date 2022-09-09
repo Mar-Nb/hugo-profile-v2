@@ -67,7 +67,7 @@ url = "mailto:niombela.martin@gmail.com"
 
 	[params.about]
 	enable = true
-	title = "A propos moi"
+	title = "A propos de moi"
 	image = "/images/bitmoji-lecteur.png"
 	content = """
 Je suis un développeur passionné par le développement, que cela soit pour le web, ou le mobile. J'ai un DUT, une licence professionnelle et un titre RNCP de niveau 7, tous dans le domaine du développement informatique.
